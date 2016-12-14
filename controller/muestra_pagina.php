@@ -78,7 +78,7 @@
         //-----------------------------------------
         public function mostrar_pagina_scripts($pagina,$arr_script,$id_modulo){
            
-
+            /**/
             $valores_login = $this->valida_vals();
 
             $perfil_actual = $this->valida_perfil();

@@ -14,14 +14,14 @@
 
             $this->arr_scripts = [
 
-                "jQuery"=>"bower_components/jquery/dist/jquery.min.js",
+                "jQuery"=>"bower_components/jquery/dist/jquery.js",
                 //"jQueryUI"=>"js/plugins/autocompleta/jquery-ui.min.js",
                 "Bootstrap"=>"bower_components/bootstrap/dist/js/bootstrap.min.js",
                 //"Metis Menu"=>"bower_components/metisMenu/dist/metisMenu.min.js",
-                //"DataTables"=>"bower_components/datatables/media/js/jquery.dataTables.min.js",
+                "DataTables"=>"bower_components/datatables/media/js/jquery.dataTables.min.js",
                 //"DataTables-Bootstrap"=>"bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js",
                 //"DataTables-Data"=>"js/data_tabla.js",
-                //"validav1"=>"../js/plugins/validav1/valida_p_v1.js",
+                "validav1"=>"bower_components/valida_p.js/js/valida_p_v1.js",
                 //"jquery ui widget"=>"js/jquery.ui.widget.js",
                 //"jquery iframe-transport"=>"js/jquery.iframe-transport.js",
                 //"fileupload plugin"=>"js/jquery.fileupload.js",
@@ -34,11 +34,12 @@
                 //"timer.js"=>"js/plugins/sesion_plugin/timer.jquery.js",
                 //"bootstrap-treeview"=>"bower_components/bootstrap-treeview/public/js/bootstrap-treeview.js",
                 //"valida_p_v1.js"=>"bower_components/valida_p.js/js/valida_p_v1.js",
-                //"jquery_controllerV2"=>"bower_components/jquery_controllerV2.js/jquery_controllerV2.js",
+                "jquery_controllerV2"=>"bower_components/jquery_controllerV2.js/jquery_controllerV2.js",
                 //"validaArchivoPlugin.js"=>"bower_components/validaArchivoPlugin.js/validaArchivoPlugin.js",
                 //"raphael-min.js"=>"bower_components/raphael/raphael-min.js",
                 //"morris.js"=>"bower_components/morrisjs/morris.min.js",
                 "sb-admin-2.js"=>"bower_components/sb-admin-2/js/sb-admin-2.js",
+                "helper-global"=>"js/helper_global.js",
 
             ];
 
@@ -55,6 +56,9 @@
                 "sb-admin-2"=>"bower_components/sb-admin-2/css/sb-admin-2.css",
                 //"morris"=>"bower_components/morrisjs/morris.css",
                 "font-awesome"=>"bower_components/sb-admin-2/font-awesome-4.1.0/css/font-awesome.min.css",
+                //"dataTables jquery"=>"bower_components/datatables/media/css/jquery.dataTables.css",
+                //"dataTables f"=>"bower_components/datatables/media/css/dataTables.foundation.css",
+                "dataTables"=>"bower_components/datatables/media/css/dataTables.bootstrap.css",
                 //"dataTables.bootstrap"=>"bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css",
                 //"font-awesome"=>"bower_components/font-awesome/css/font-awesome.min.css",
                 //"jquery-ui"=>"js/plugins/autocompleta/jquery-ui.min.css",
