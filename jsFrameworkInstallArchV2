@@ -187,6 +187,8 @@ function creaBD {
 	else
 		echo -e "\e[31mFILE_SQL---ERROR [No existe archivo framework.]\e[0m"
 	fi
+
+	cd ..
 }
 
 function pidePassBD {
