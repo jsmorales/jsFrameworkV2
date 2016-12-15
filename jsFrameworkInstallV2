@@ -182,6 +182,8 @@ function creaBD {
 	else
 		echo -e "\e[31mFILE_SQL---ERROR [No existe archivo framework.]\e[0m"
 	fi
+
+	cd ..
 }
 
 function pidePassBD {
@@ -210,7 +212,7 @@ function pidePassBD {
 	mysqladmin -u $USER_MYSQL -p$PASS_MYSQL create $NOM_APP
 
 	echo -e "\e[37mReestableciendo la BD...\e[0m"
-	mysql -u $USER_MYSQL -p$PASS_MYSQL $NOM_APP < "jsFrameWorkBD.sql"	
+	mysql -u $USER_MYSQL -p$PASS_MYSQL $NOM_APP < "schema.sql"	
 }
 
 function instalaScript {
