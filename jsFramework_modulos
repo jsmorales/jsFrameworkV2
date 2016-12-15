@@ -23,6 +23,17 @@ function crear_modulo {
 	NOMBRE_MODULO=$1
 
 	mysql -u$USER -p$PASS -e"use $DB; INSERT INTO modulos (pkID, Nombre, fkID_padre) VALUES (NULL, '$NOMBRE_MODULO', NULL);"
+
+	listar_modulos
+}
+
+function eliminar_modulo {
+
+	ID_MODULO=$1
+
+	mysql -u$USER -p$PASS -e"use $DB; DELETE FROM modulos WHERE modulos.pkID = $ID_MODULO;"
+
+	listar_modulos
 }
 #-----------------------------------------------------------
 
@@ -38,6 +49,12 @@ elif [ $1 == "-l" ]; then
 	echo -e "\e[32mOK [Listar módulos.]\e[0m"
 
 	listar_modulos
+
+elif [ $1 == "-r" ]; then
+
+	echo -e "\e[32mOK [Eliminar módulo.]\e[0m"
+
+	eliminar_modulo $2
 
 else
 	echo -e "\e[31mERROR [Opción inválida.]\e[0m"

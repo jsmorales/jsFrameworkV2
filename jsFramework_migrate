@@ -15,7 +15,7 @@ echo "Este script es un asistente para correr migraciones hechas de tipo nombred
 echo ""
 echo "Migraciones disponibles:"
 
-cd db && ls -l | grep '.sql'
+cd db && ls -l | grep '*.sql'
 
 echo ""
 
