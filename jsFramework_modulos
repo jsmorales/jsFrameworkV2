@@ -1,0 +1,45 @@
+#!/bin/bash
+#Crud de los modulos de la aplicacion
+#http://linuxcoman2.blogspot.com.co/2014/09/scrip-shell-consulta-base-de-datos-y.html
+
+#menu para las acciones
+#crear
+#consultar
+
+#variables de configuracion---------------------------------
+USER="root"
+PASS="Lunel2016"
+DB="lunelAdmin"
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+function listar_modulos {
+
+	mysql -u$USER -p$PASS -e"use $DB; SELECT * FROM modulos;"
+}
+
+function crear_modulo {
+
+	NOMBRE_MODULO=$1
+
+	mysql -u$USER -p$PASS -e"use $DB; INSERT INTO modulos (pkID, Nombre, fkID_padre) VALUES (NULL, '$NOMBRE_MODULO', NULL);"
+}
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+if [ $1 == "-c" ]; then
+
+	echo -e "\e[32mOK [Crear módulo.]\e[0m"
+
+	crear_modulo $2
+
+elif [ $1 == "-l" ]; then
+
+	echo -e "\e[32mOK [Listar módulos.]\e[0m"
+
+	listar_modulos
+
+else
+	echo -e "\e[31mERROR [Opción inválida.]\e[0m"
+fi
+#-----------------------------------------------------------

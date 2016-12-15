@@ -14,7 +14,6 @@
 
   $crea = $arrPermisos[0]["crear"];
 
-  //echo "Nombre de la aplicacion_".$NomCookiesApp;
  ?>
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  -->
 <?php 
