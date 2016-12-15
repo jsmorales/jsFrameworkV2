@@ -128,8 +128,11 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 
 INSERT INTO `usuarios` (`pkID`, `alias`, `pass`, `pass_conf`, `nombre`, `apellido`, `email`, `fkID_tipo`) VALUES
 (1, 'root', '8cb2237d0679ca88db6464eac60da96345513964', '', 'root', 'root', 'example@example.com', 1);
+
+#credenciales de usuario
 #root
 #12345
+
 --
 -- Índices para tablas volcadas
 --
