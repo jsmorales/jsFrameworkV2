@@ -38,7 +38,7 @@
 
             <div class="row">
               <div class="col-md-6">
-                  Registro de Roles Lunel-IE
+                  Registro de Roles
               </div>
               <div class="col-md-6 text-right">
                  <button id="btn_nuevoRol" type="button" class="btn btn-primary" data-toggle="modal" data-target="#frm_modal_rol" <?php if ($crea != 1){echo 'disabled="disabled"';} ?> ><span class="glyphicon glyphicon-plus"></span> Nuevo Rol</button>
