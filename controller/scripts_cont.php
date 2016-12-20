@@ -19,7 +19,7 @@
                 "Bootstrap"=>"bower_components/bootstrap/dist/js/bootstrap.min.js",
                 //"Metis Menu"=>"bower_components/metisMenu/dist/metisMenu.min.js",
                 "DataTables"=>"bower_components/datatables/media/js/jquery.dataTables.min.js",
-                //"DataTables-Bootstrap"=>"bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js",
+                "DataTables-Bootstrap"=>"bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js",
                 //"DataTables-Data"=>"js/data_tabla.js",
                 "validav1"=>"bower_components/valida_p.js/js/valida_p_v1.js",
                 //"jquery ui widget"=>"js/jquery.ui.widget.js",
@@ -51,6 +51,7 @@
             $this->arr_css = [
 
                 "bootstrap"=>"bower_components/bootstrap/dist/css/bootstrap.min.css",
+                "bootstrap theme"=>"bower_components/bootstrap/dist/css/bootstrap-theme.min.css",
                 //"metisMenu"=>"bower_components/metisMenu/dist/metisMenu.min.css",
                 //"timeline"=>"dist/css/timeline.css",
                 "sb-admin-2"=>"bower_components/sb-admin-2/css/sb-admin-2.css",
